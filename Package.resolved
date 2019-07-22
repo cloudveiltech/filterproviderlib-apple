@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "adblock-swift",
+        "repositoryURL": "https://github.com/cloudveiltech/adblock-swift",
+        "state": {
+          "branch": "master",
+          "revision": "2e736029f608b6f96d3573279156ccb51b6a961f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
