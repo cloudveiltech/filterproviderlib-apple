@@ -16,8 +16,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "FilterProviderLib"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "This is a swift implentation of the CV4W filtering engine."
+  spec.swift_version = '5.0'
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -91,7 +92,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "Sources", "Sources/**/*.{h,m,swift}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.exclude_files = "Sources/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
