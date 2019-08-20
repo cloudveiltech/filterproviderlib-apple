@@ -8,5 +8,5 @@ target 'FilterProviderLib' do
   use_frameworks!
 
   # Pods for FilterProviderLib
-  pod 'adblock_swift', '~> 0.0.1'
+  pod 'adblock_swift', '0.0.*'
 end

@@ -1,0 +1,16 @@
+PODS:
+  - adblock_swift (0.0.2)
+
+DEPENDENCIES:
+  - adblock_swift (~> 0.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - adblock_swift
+
+SPEC CHECKSUMS:
+  adblock_swift: 7f4d70600dafd4c5f5ede55d0c66545d9617c6fe
+
+PODFILE CHECKSUM: d234cf4a9b14d10b71e7c0ea1e130a79dc41bca7
+
+COCOAPODS: 1.7.5

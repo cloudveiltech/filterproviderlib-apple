@@ -21,6 +21,7 @@ public class AdBlockMatcher {
     
     init() {
         self.rulesCount = 0
+        self.bypassEnabled = false
     }
     
     func addMatcher(categoryId: Int, listType: ListType, bypass: Bool) {
@@ -88,13 +89,13 @@ public class AdBlockMatcher {
         return matchedCategories
     }
     
-    func addRule(rule: String, categoryId: Int, listType: ListType) -> Bool {
+    func addRule(rule ruleRaw: String, categoryId: Int, listType: ListType) -> Bool {
         let bypass = listType == .bypassList
         
-        let (rule, err) = parseRule(rule: rule, categoryId: categoryId, listType: listType)
+        let (rule, err) = parseRule(rawRuleString: ruleRaw)
         
         if let err = err {
-            NSLog("Error parsing rule %s %s", rule, err.localizedDescription)
+            NSLog("Error parsing rule %s %s", ruleRaw, err.localizedDescription)
             return false
         }
         

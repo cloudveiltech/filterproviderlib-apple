@@ -44,11 +44,12 @@ public class PolicyConfiguration {
             return
         }
         
-        guard let configuredLists = configuration.configuredLists else {
-            // The rationale behind returning .fresh for an empty list is that there are no lists to be old.
+        if configuration.configuredLists.count == 0 {
             completionHandler(.fresh)
             return
         }
+        
+        let configuredLists = configuration.configuredLists
         
         for list in configuredLists {
             let listFilePath = self.getListFilePath(from: list.relativeListPath)
