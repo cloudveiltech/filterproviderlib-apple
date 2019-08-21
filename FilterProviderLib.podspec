@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
   
   spec.name         = "FilterProviderLib"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "This is a swift implentation of the CV4W filtering engine."
   spec.swift_version = '5.0'
 
