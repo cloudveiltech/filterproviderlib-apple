@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   #  can feel like a chore to fill in it's definitely to your advantage. The
   #  summary should be tweet-length, and the description more in depth.
   #
-
+  
   spec.name         = "FilterProviderLib"
   spec.version      = "0.0.2"
   spec.summary      = "This is a swift implentation of the CV4W filtering engine."
@@ -134,5 +134,5 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-
+  spec.dependency "adblock_swift"
 end
