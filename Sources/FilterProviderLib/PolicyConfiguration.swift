@@ -36,6 +36,10 @@ public class PolicyConfiguration {
     
     var lastFilterListResults: [String: VerificationResult]? = nil
     
+    public init() {
+        
+    }
+    
     public func verifyLists(completionHandler: @escaping (VerificationResult) -> Void) {
         var hashes: [String: String] = [:]
         
